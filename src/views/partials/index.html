@@ -1,0 +1,12 @@
+<div class="row notes-container">
+    <div class="col-sm-4 notes-list-wrapper">
+        <div class="notes-overview" ng-repeat="note in notes" ng-click="setCurrentNote(note)" ng-class="{selected: note === currentNote}">
+            {{note.title}}
+        </div>
+    </div>
+    <div class="col-sm-8 notes-content-wrapper">
+        <div class="notes-content">
+            {{currentNote.content}}
+        </div>
+    </div>
+</div>
